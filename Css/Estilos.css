@@ -1,0 +1,70 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+.background {
+  background-image: url('https://img.freepik.com/vector-gratis/fondo-rayas-geometricas-diagonales-amarillas-semitono-detallado_1409-1451.jpg?w=1060&t=st=1714048263~exp=1714048863~hmac=fca5570d7789c8f80dc5e38e3a9ebdd385b35a96bbd3452c749f57b0ea661477');
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  text-align: center;
+  
+  -webkit-text-stroke: 0.25px rgb(255, 255, 255); /* Borde de 1 píxel de color negro */
+
+    color: rgb(0, 0, 0); /* Color del texto */
+}
+
+
+.error {
+  color: red;
+}
+
+
+
+.num-buttons {
+  text-align: center;
+  
+  -webkit-text-stroke: 0px rgb(255, 255, 255); /* Borde de 1 píxel de color negro */
+
+    color: white; /* Color del texto */
+    margin-top: 20px;
+
+}
+
+
+
+button {
+  
+  margin: 5px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border-color: rgb(65, 107, 170);
+  background-color: rgb(19, 82, 150);
+  transition: background-color 0.50s ease;
+  color: beige;
+ 
+}
+
+button:hover{
+  background-color: rgb(65, 107, 170);
+  color: rgb(255, 255, 255);
+}
+button:active{
+  background-color: azure;
+  transition: background-color 0s ease-out;
+  color: rgb(11, 11, 11)
+}

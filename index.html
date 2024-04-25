@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - Banco XYZ</title>
+<link rel="stylesheet" href="Css/Estilos.css">
+</head>
+<body>
+    <div class="background">
+        <div class="centered">
+            <h1>Bienvenido al Banco Vuela Alto</h1>
+            <div id="cardInput">
+                <label for="cardNumber">Ingrese el número de su tarjeta:</label>
+                <input type="text" id="cardNumber" maxlength="16" disabled>
+                
+                <div class="num-buttons">
+                    <button onclick="addNumber('1')">1</button>
+                    <button onclick="addNumber('2')">2</button>
+                    <button onclick="addNumber('3')">3</button>
+                    <br>
+                    <button onclick="addNumber('4')">4</button>
+                    <button onclick="addNumber('5')">5</button>
+                    <button onclick="addNumber('6')">6</button>
+                    <br>
+                    <button onclick="addNumber('7')">7</button>
+                    <button onclick="addNumber('8')">8</button>
+                    <button onclick="addNumber('9')">9</button>
+                    <br>
+                    <button onclick="clearNumber()">Limpiar</button>
+                    <button onclick="addNumber('0')">0</button>
+                    <button onclick="removeLast()">Borrar</button>
+                        <div class="Ingresar">
+                        <button onclick="checkCardNumber()">Ingresar</button>
+                        <p id="cardError" class="error"></p>
+                    </div> 
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <script src="Js/Tarjeta-ingreso.js"></script>
+
+</body>
+</html>

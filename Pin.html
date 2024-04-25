@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Clave - Banco XYZ</title>
+    <link rel="stylesheet" href="Css/Estilos.css">
+</head>
+<body>
+    <div class="background">
+        <div class="centered">
+            <h1>Ingrese su clave</h1>
+            <div id="pinInput">
+                <label for="pin">Ingrese su clave de 4 dígitos:</label>
+                <input type="password" id="pin" maxlength="4" disabled>
+                <div class="num-buttons">
+                    <button onclick="addNumber('1')">1</button>
+                    <button onclick="addNumber('2')">2</button>
+                    <button onclick="addNumber('3')">3</button>
+                    <br>
+                    <button onclick="addNumber('4')">4</button>
+                    <button onclick="addNumber('5')">5</button>
+                    <button onclick="addNumber('6')">6</button>
+                    <br>
+                    <button onclick="addNumber('7')">7</button>
+                    <button onclick="addNumber('8')">8</button>
+                    <button onclick="addNumber('9')">9</button>
+                    <br>
+                    <button onclick="clearPin()">Limpiar</button>
+                    <button onclick="addNumber('0')">0</button>
+                    <button onclick="removeLast()">Borrar</button>
+                    <div>
+                    <button onclick="checkPin()">Ingresar</button>
+                    <p id="pinError" class="error"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="Js/Pin-ingreso.js"></script>
+</body>
+</html>
